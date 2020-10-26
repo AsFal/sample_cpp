@@ -1,2 +1,4 @@
 *build*
 .idea
+datasets/*-aligned.png
+datasets/matching-keypoints.jpg

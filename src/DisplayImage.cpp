@@ -1,18 +1,11 @@
-#ifndef DISPLAY_IMAGE
-#define DISPLAY_IMAGe
+#include <opencv4/opencv2/opencv.hpp>
 
-int display(string path) {
-    Mat image;
-    image = imread( path, 1 );
-
-    if ( !image.data )
-    {
-        printf("No image data \n");
-        return -1;
+void display(char* path) {
+    cv::Mat image;
+    image = cv::imread( path, 1 );
+    if (!image.data) {
+        throw "No image data \n";
     }
-    namedWindow("Display Image", WINDOW_AUTOSIZE );
+    namedWindow("Display Image", cv::WINDOW_AUTOSIZE );
     imshow("Display Image", image);
 }
-
-
-#endif

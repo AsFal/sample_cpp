@@ -15,9 +15,13 @@ add_subdirectory(libs/googletest)
 
 set(Sources
         src/Example.cpp
+        src/DisplayImage.cpp
+        src/OpenCVUtils.cpp
         )
 set(Headers
         src/Example.hpp
+        src/DisplayImage.hpp
+        src/OpenCVUtils.hpp
         )
 
 add_library(${This}Lib STATIC ${Sources} ${Headers})
