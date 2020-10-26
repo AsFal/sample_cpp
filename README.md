@@ -20,3 +20,5 @@ cmake ..
 cmake --build .
 ctest # make test
 ```
+https://linuxize.com/post/how-to-install-opencv-on-ubuntu-20-04/
+https://rtfm.co.ua/en/docker-configure-tzdata-and-timezone-during-build/

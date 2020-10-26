@@ -6,6 +6,10 @@
 bool f() {
     return true;
 }
+// test that the proper files are begin generated
+// to have automated tests, seperate getting the rectangles in another step
+// conditions around file access
+
 
 TEST(ExampleTests, SanityCheck) { // Test(<SuiteName>, <TestName>)
     EXPECT_TRUE(true); // A test will run all expects
