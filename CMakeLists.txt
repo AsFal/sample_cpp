@@ -14,10 +14,13 @@ enable_testing()
 add_subdirectory(libs/googletest)
 
 set(Sources
-        src/OpenCVUtils.cpp
+        src/ROIReader.cpp
+        src/ImageAlign.cpp
         )
 set(Headers
-        src/OpenCVUtils.hpp
+        src/ImageReader.hpp
+        src/ROIReader.hpp
+        src/ImageAlign.hpp
         )
 
 add_library(${This}Lib STATIC ${Sources} ${Headers})
