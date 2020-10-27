@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 
-set (This Example)
+set (This Manipulations)
 
 project(${This} CXX)
 

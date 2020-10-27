@@ -1,15 +1,15 @@
 cmake_minimum_required(VERSION 3.16)
 
-set(This ExampleTest)
+set(This Tests)
 
 set(Sources
-        ExampleTest.cpp
+        ImageAlignTest.cpp
         )
 add_executable(${This} ${Sources})
 
 target_link_libraries(${This} PUBLIC
         gtest_main
-        ExampleLib
+        ManipulationsLib
         )
 
 add_test(
