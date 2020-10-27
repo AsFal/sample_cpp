@@ -37,5 +37,4 @@ RUN git submodule update --init --recursive \
     && cmake .. \
     && cmake --build .
 
-WORKDIR /app/build
-CMD ["make", "test"]
+CMD ["build/test/Tests"]
