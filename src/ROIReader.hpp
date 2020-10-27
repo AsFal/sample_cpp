@@ -5,7 +5,7 @@
 
 class ROIReader: public ImageReader {
 public:
-    Mat read(string imagePath) const override;
+    Mat read(const string& imagePath) const override;
 };
 
 class something {

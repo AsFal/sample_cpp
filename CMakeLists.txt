@@ -28,6 +28,6 @@ add_library(${This}Lib STATIC ${Sources} ${Headers})
 add_executable(${This} main.cpp)
 
 target_link_libraries(${This} ${This}Lib)
-target_link_libraries(${This} ${OpenCV_LIBS})
+target_link_libraries(${This}Lib ${OpenCV_LIBS})
 
 add_subdirectory(test)

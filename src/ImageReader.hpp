@@ -9,7 +9,7 @@ using namespace cv;
 
 class ImageReader {
 public:
-    virtual Mat read(string imagePath) const =0;
+    virtual Mat read(const string& imagePath) const =0;
 };
 
 #endif
